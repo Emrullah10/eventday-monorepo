@@ -1,0 +1,6 @@
+.env
+node_modules/
+.codegraph/
+dist/
+build/
+.DS_Store
