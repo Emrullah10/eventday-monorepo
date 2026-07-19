@@ -1,30 +1,19 @@
 {
-  "name": "event-day-server",
+  "name": "everyday-mono-repo",
+  "private": true,
   "version": "1.0.0",
-  "description": "Event Day Backend API",
-  "main": "src/app.js",
+  "type": "module",
+  "description": "EventDay monorepo: identity/event/booking/aggregator services + web gateway + web app",
+  "workspaces": [
+    "packages/modules/*",
+    "core/*",
+    "services/*",
+    "everyday-web-app"
+  ],
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
-    "test": "jest --watchAll"
+    "build:schema": "node scripts/build-schema.js",
+    "lint": "echo \"(no root linter configured yet)\"",
+    "test": "npm run test --workspaces --if-present"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@google/generative-ai": "^0.24.1",
-    "axios": "^1.13.2",
-    "bcryptjs": "^2.4.3",
-    "cheerio": "^1.1.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.2",
-    "pg": "^8.11.3"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0",
-    "nodemon": "^3.0.2",
-    "supertest": "^6.3.3"
-  }
+  "license": "ISC"
 }

@@ -1,0 +1,24 @@
+{
+  "name": "everyday-service-event",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "dependencies": {
+    "@everyday/config": "*",
+    "@everyday/core-service-event": "*",
+    "@everyday/datasource": "*",
+    "@everyday/errors": "*",
+    "@everyday/helper": "*",
+    "@everyday/middlewares": "*",
+    "@everyday/service-discovery": "*",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

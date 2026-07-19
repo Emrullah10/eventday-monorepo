@@ -1,0 +1,13 @@
+{
+  "name": "@everyday/service-discovery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "dependencies": {
+    "redis": "^4.6.13"
+  }
+}

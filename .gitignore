@@ -1,6 +1,12 @@
 .env
+.env.*
+!.env.example
 node_modules/
 .codegraph/
 dist/
 build/
 .DS_Store
+.wolf/*.tmp
+.wolf/_session.json
+everyday-web-app/dist/
+

@@ -1,0 +1,27 @@
+{
+  "name": "everyday-web-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "dependencies": {
+    "@everyday/config": "*",
+    "@everyday/errors": "*",
+    "@everyday/helper": "*",
+    "@everyday/middlewares": "*",
+    "@everyday/service-discovery": "*",
+    "axios": "^1.13.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "http-proxy-middleware": "^2.0.6",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
